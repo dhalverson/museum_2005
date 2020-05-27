@@ -18,4 +18,10 @@ class MuseumTest < Minitest::Test
     assert_equal "Denver Museum of Nature and Science", dmns.name
   end
 
+  def test_it_starts_with_an_empty_exhibits_array
+    dmns = Museum.new("Denver Museum of Nature and Science")
+    dmms.exhibits
+
+    assert_equal [], dmns.exhibits
+  end
 end
