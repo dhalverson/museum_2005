@@ -22,4 +22,13 @@ class Museum
   def admit(patron)
     @patrons << patron
   end
+
+  def patrons_by_exhibit_interest
+    patrons_hash = {}
+    @exhibits.each do |exhibit|
+      exhibit.name
+      @patrons.each { |patron| patron.interests }
+    end
+    require "pry"; binding.pry
+  end
 end
