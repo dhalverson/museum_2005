@@ -14,6 +14,7 @@ class ExhibitTest < Minitest::Test
     exhibit = Exhibit.new({name: "Gems and Minerals", cost: 0})
 
     assert_equal "Gems and Minerals", exhibit.name
+    assert_equal 0, exhibit.cost
   end
 
 end
